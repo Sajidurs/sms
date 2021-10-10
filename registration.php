@@ -27,7 +27,7 @@ require_once 'dbcon.php';
                               $result = mysqli_query($conn, "INSERT INTO `users`(`name`, `email`, `password`, `photo`) VALUES ('$full_name', '$email', '$password', '$photo_name')");
 
                               if ($result){
-                                  $success = "বিনা খরচে রেজিস্টার হয়ে গেছে আপনার";
+                                  $success = "বিনা খরচে রেজিস্টার হয়ে গেছে";
                               } else {
                                 $regis_error = "মনে হচ্ছে একটি সমস্যা হয়েছে";
                               }
@@ -37,7 +37,7 @@ require_once 'dbcon.php';
                           }
 
                   }else {
-                    $match_error = "পাসস ওয়ার্ড তো মিললই না";
+                    $match_error = "পাসওয়ার্ড তো মিললই না";
                   }
               }else {
                 $char_error = "৮ টা অক্ষর দেওয়া লাগবে";
@@ -72,7 +72,7 @@ require_once 'dbcon.php';
 
     <!-- Main CSS --->
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Admin Login Page</title>
+    <title>স্যার দের লগইন পেজ</title>
   </head>
   <body>
 
