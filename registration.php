@@ -1,4 +1,5 @@
 <?php
+// The Registration Page For SMS
 require_once 'dbcon.php';
   if(isset($_POST['submit'])){
 
